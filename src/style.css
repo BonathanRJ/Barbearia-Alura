@@ -12,11 +12,14 @@
 }
 #texto{
     text-align: left;
-    margin: 20px 0 0;
-    font-size: 22px;
+    margin: 10px 10px 10px;
+    font-size: 20px;
+    color: #050978;
 }
 #missao{
-    font-size: 20px
+    font-size: 23px;
+    margin: 0px 10px 0px;
+    color: #050978;
 }
 em strong{
     color: #FF0000;
@@ -36,18 +39,15 @@ em strong{
     display: inline-block;
     vertical-align: top;
     width: 20%;
-    margin-right: 25%;
+    margin-right: 3%;
 }
 #cortando{
     align-items: right;
-    width:350px;
+    width: 290px;
     height:250px;
     padding: 20px;
-    
+    border-radius: 45%;
 }
-#cortando:hover{
-    font-size: 40px;
- }
 header {
     background: #BBBBBB;
     padding: 20px;
