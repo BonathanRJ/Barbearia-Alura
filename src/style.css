@@ -40,14 +40,26 @@ em strong{
     vertical-align: top;
     width: 20%;
     margin-right: 3%;
+    
 }
+.tipos_bnf:hover{
+    transform: scale(1.1);
+
+}
+
 #cortando{
     align-items: right;
     width: 290px;
     height:250px;
     padding: 20px;
-    border-radius: 45%;
+    border-radius: 50%;
+    
 }
+#cortando:hover{
+    transform: scale(1.1);
+
+}
+
 header {
     background: #BBBBBB;
     padding: 20px;
@@ -86,4 +98,63 @@ footer{
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 0px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid;
+    padding: 8px 15px;
 }
