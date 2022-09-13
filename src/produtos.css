@@ -33,6 +33,43 @@ nav a{
 nav a:hover{
     color:#C78C19;
     text-decoration: underline;
+    transition: 0.1s all; 
+}
+
+.imagem{
+    width: 75%;
+    transition: 0.4s all; 
+}
+
+.imagem:hover{
+    width: 80%;
+    animation: pulsante 3s linear infinite;
+    transition: 0.4s all; 
+    
+}
+
+@keyframes pulsante{
+    0%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    25%{
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
 }
 
 .produtos{
@@ -54,11 +91,13 @@ nav a:hover{
 }
 .produtos li:hover{
    border-color: #C78C19;
+   transition: 0.4s all; 
 }
 
 .produtos li:hover h2{ 
     border-color: #C78C19;
-    font-size: 40px;
+    transition: 0.4s all; 
+    font-size: 35px;
  }
 
 .produtos li:active{
@@ -86,4 +125,28 @@ footer{
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px){
+    .produtos{
+        width: auto;
+        width: 95%;
+    }
+    .caixa{
+        width: 100%;
+    }
+    nav{
+        position: static;
+    }
+    h1{
+        text-align: center;
+    }
+    .imagem{
+        width: 80%;
+    }
+    .produtos li{
+        margin: 10px 10px;
+        width: 95%;
+
+    }
 }

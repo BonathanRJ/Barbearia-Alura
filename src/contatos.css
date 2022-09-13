@@ -29,6 +29,7 @@ nav a{
 nav a:hover{
     color:#C78C19;
     text-decoration: underline;
+    transition: 0.1s all; 
 }
 main{
     margin: 0px 40px;
@@ -48,7 +49,7 @@ form label, form legend{
     display:block;
     margin: 0 0 20px;
     padding: 10px 10px;
-    width: 50%;
+    width: 40%;
     border-radius: 0.3em;
     opacity: 1;
     border-color: gray;
@@ -57,8 +58,8 @@ form label, form legend{
     margin: 20px 0;
 }
 .enviar{
-    width: 40%;
-    padding: 15px 0px;
+    
+    padding: 15px 10px;
     background: orange;
     color: white;
     font-weight: bold;
@@ -70,22 +71,58 @@ form label, form legend{
 }
 .enviar:hover{
     background: darkorange;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 table{
-    margin: 20px 0px 40px;
+    margin: 20px 0px 20px;
+    border: 2px solid #000000;
 }
 thead{
     background: #555555;
     color: white;
     font-weight: bold;
+    
 }
+
 td, th{
     border: 1px solid;
     padding: 8px 15px;
+    border: 1.5px solid #000000;
 }
 footer{
     text-align: center;
     background: url("/assets/bg.jpg");
     padding: 40px 0px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+
+@media screen and (max-width: 480px){
+    .caixa{
+        width: 100%;
+    }
+    nav{
+        position: static;
+    }
+    h1{
+        text-align: center;
+    }
+    .input-padrao{
+        width: 90%;
+    }
+    .enviar{
+        margin-left: 100px;
+        font-size: 13px;
+    }
+    .enviar:hover{
+        background: darkorange;
+        transform: scale(1.2);
+    }
+    table{
+        width: 100%;
+    }
 }
