@@ -31,10 +31,10 @@
             <input type="email" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX")>
+            <input type="number" id="telefone" class="input-padrao" min="1" max="11" required placeholder="(XX) XXXXX-XXXX")>
             
             <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea required>
+            <textarea cols="70" rows="10" id="mensagem" maxlength="280" class="input-padrao"></textarea required>
 
             <fieldset>
                 <legend>Como prefere o nosso contato?</legend>
